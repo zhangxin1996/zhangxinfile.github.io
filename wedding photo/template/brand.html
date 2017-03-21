@@ -1,0 +1,100 @@
+<div class="container" style="width: 100%;">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-top: 100px;">
+			<img style="width: 100%;" src="img/171111287771.jpg"/>
+		</div>
+	</div>
+</div>
+
+<!--品牌介绍-->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 60px 0px;">
+			<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 ju" style="padding-top: 40px;">
+				<img style="width: 100%;" src="img/章.png"/>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-1 col-md-push-1 ju" style="padding-top: 40px;">
+				<p class="h1">山西自主品牌中的佼佼者</p>
+				<p class="h3" style="line-height: 30px;padding-top: 30px;"><span ng-style="yanse">山西米兰婚纱摄影有限责任公司</span>成立于1996年，旗下米兰婚纱摄影机构在全国迅速发展壮大，并在中国国家商标总局成功注册<span ng-style="yanse">（米兰）</span>，成为中国婚纱摄影行业<span ng-style="yanse">（米兰）</span>商标的唯一合法拥有者！</p>
+				<p class="h3" style="line-height: 30px;">其品牌以影响<span ng-style="yanse">全国婚纱摄影行业</span>成为全国<span ng-style="yanse">家喻户晓</span>的知名品牌！随即又成功创办米兰商务连锁酒店，成为山西<span ng-style="yanse">自主品牌</span>中的佼佼者。</p>
+				<p class="h4" ng-style="yanse2">JINGGXI INDEPENDENT BRAND OF OUTSTANDING PERSON</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--成就-->
+<div class="container">
+	<div class="row" style="padding: 60px 0px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+			<p class="h2">经历20年，把握时代步伐跨越式发展</p>
+			<p class="h1"><span ng-style="yanse">米兰品牌发展至今……</span></p>
+			<p class="h3">已有<span ng-style="yanse">6</span>家婚纱直营店、<span ng-style="yanse">58</span>家连锁店、<span ng-style="yanse">156</span>多家商标授权店全国近<span ng-style="yanse">2006</span>家商标使用店</p>
+			<p class="h4"><span ng-style="yanse">9</span>家金融机构、<span ng-style="yanse">6</span>个旅游景点、<span ng-style="yanse">300000</span>平米影视基地、<span ng-style="yanse">120</span>万客户见证！</p>
+			<p class="h5" ng-style="yanse3">{{"9 financial institutions,6 tourist attractions,300000 square meters of film and television base,1 million 200 thousand customer witness!" | uppercase}}</p>
+		</div>
+	</div>
+</div>
+
+<!--荣获-->
+<div class="container">
+	<div class="row" style="padding: 60px 0px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+			<p class="h1" ng-style="yanse">{米兰婚纱摄影连锁机构}</p>
+			<img style="width: 100%;padding-top: 50px;" src="img/荣获.jpg"/>
+		</div>
+		
+	</div>
+</div>
+
+<!--保证-->
+<div class="container">
+	<div class="row" style="padding: 60px 0px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="text-center">
+				<p class="h1">MILAN COMMITMENT</p>
+				<p class="h1">米兰婚纱的六大保障</p>
+				<p class="h3">Milan Wedding Six Protection</p>
+				<hr style="border-top: 2px dashed #000;height: 30px"/>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 position" style="padding: 20px 0px;" ng-repeat="item in chongfu">
+				<figure>
+					<img style="width: 18%;" ng-src="{{item.one}}"/>
+					<span class="h2" ng-bind-html="item.two"></span>
+				</figure>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--理由-->
+<div class="container">
+	<div class="row" style="padding: 60px 0px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="text-center">
+				<p class="h1">CHOOSE MILAN</p>
+				<p class="h1">米兰婚纱的十大理由</p>
+				<p class="h3">Ten main reasons to choose Huangshimilan</p>
+				<hr style="border-top: 2px dashed #000;height: 30px"/>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 position" style="padding: 20px 0px;" ng-repeat="item in liyou">
+				<figure>
+					<img style="width: 15%;" ng-src="{{item.one}}"/>
+					<span class="h2" ng-style="yanse" ng-bind="item.two"></span>
+				</figure>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	@media only screen and (min-width: 992px) {
+		.ju{
+			text-align: center;
+		}
+		.position{
+			position: relative;
+			left: 8%;
+		}
+	}
+</style>

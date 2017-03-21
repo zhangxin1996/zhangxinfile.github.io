@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="lib/jquery_1.9.js" ></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="lib/angular.min.js" ></script>
+		<script type="text/javascript" src="lib/angular-ui-router.js" ></script>
+		<script type="text/javascript" src="lib/angular-sanitize.min.js" ></script>
+		<script type="text/javascript" src="js/home.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/trip.js" ></script>
+		<script type="text/javascript" src="js/trip/bali.js" ></script>
+		<script type="text/javascript" src="js/trip/gulangyu.js" ></script>
+		<script type="text/javascript" src="js/trip/jiuzhaigou.js" ></script>
+		<script type="text/javascript" src="js/trip/lijiang.js" ></script>
+		<script type="text/javascript" src="js/trip/maldives.js" ></script>
+		<script type="text/javascript" src="js/trip/phuket.js" ></script>
+		<script type="text/javascript" src="js/trip/sanya.js" ></script>
+		<script type="text/javascript" src="js/guest.js" ></script>
+		<script type="text/javascript" src="js/brand.js" ></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="lib/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<title>首页</title>
+	</head>
+	<body ng-controller="homeController">
+	<!--导航栏-->
+	<div class="container">
+		<div class="row">
+			<div class="navbar navbar-default navbar-fixed-top" style="background-color: #3e0303; height: 100px;">
+				<div class="col-lg-2 col-md-2 col-sm-3">	
+					<div class="navbar-header">
+						<a class="navbar-brand">
+							<img style="width: 180px; margin-top:-0.5vw;" src="img/Logo.png"/>
+						</a>
+						<button class="btn btn-default navbar-toggle text-center" data-toggle="collapse" data-target="#demo" style="margin-top: 50px;">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+				</div>
+				<div class="col-lg-10 col-md-10 col-sm-9">	
+					<div id="demo" class="collapse navbar-collapse fudong" style="padding-top: 30px; background-color: #3e0303; width: 100%;">
+						<ul class="nav navbar-nav" style="font-size: 20px;">
+							<li style="padding-right: 1.5vw;"><a style="color: #fff;" ui-sref="main">首页</a></li>
+							<li style="padding-right: 1.5vw;"><a style="color: #fff;" ui-sref="trip">旅拍</a></li>
+							<li style="padding-right: 1.5vw;"><a style="color: #fff;" ui-sref="guest">客照</a></li>
+							<li style="padding-right: 1.5vw;"><a style="color: #fff;" ui-sref="brand">品牌简介</a></li>
+							<li style="padding-right: 1.5vw;"><a style="color: #fff;" ui-sref="login">登录</a></li>
+							<li style="padding-right: 1.5vw;"><a style="color: #fff;" ui-sref="register">注册</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div ui-view=""></div>
+	
+	
+	<!--尾部-->
+	<div class="container" style="background-color: #222;width: 100%;">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="text-center" style="padding-top: 50px;">
+					<p class="h3" style="color: #fff;" ng-repeat="item in weibu1"ng-bind="item.one+'&nbsp;'"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+@media only screen and (min-width:768px ) {
+	.navbar-nav{
+		float: right;
+	}
+}
+@-moz-media only screen and (min-width:768px ) {
+	.navbar-nav{
+		float: right;
+	}
+}
+@-webkit-media only screen and (min-width:768px ) {
+	.navbar-nav{
+		float: right;
+	}
+}
+@-o-media only screen and (min-width:768px ) {
+	.navbar-nav{
+		float: right;
+	}
+}

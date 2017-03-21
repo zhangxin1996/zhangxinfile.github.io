@@ -1,0 +1,121 @@
+<div class="container" style="width: 100%;">
+	<div class="row">
+		
+		<!--banner-->
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-top: 100px;">
+			<img style="width: 100%;" src="img/banner_lp.jpg"/>
+		</div>
+		
+		<!--内容-->
+		<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 juli" style="padding-top: 30px;">
+			<!--one-->
+			<div class="kuang" style="width: 7vw;height: 3vw;border: 1px solid #ccc;border-radius: 20px;" ui-sref=".0">
+				<a class="zi" style="font-size: 1.2vw;color: #000;position: relative;top: 20%;left: 20%;">巴厘岛</a>
+			</div>
+			<!--two-->
+			<div class="kuang" style="width: 7vw;height: 3vw;border: 1px solid #ccc;border-radius: 20px;" ui-sref=".1">
+				<a class="zi" style="font-size: 1.2vw;color: #000;position: relative;top: 20%;left: 20%;">鼓浪屿</a>
+			</div>
+			<!--three-->
+			<div class="kuang" style="width: 7vw;height: 3vw;border: 1px solid #ccc;border-radius: 20px;" ui-sref=".2">
+				<a class="zi" style="font-size: 1.2vw;color: #000;position: relative;top: 20%;left: 20%;">九寨沟</a>
+			</div>
+		</div>
+		
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 juli2" style="padding-bottom: 30px;">
+			<!--four-->
+			<div class="kuang" style="width: 7vw;height: 3vw;border: 1px solid #ccc;border-radius: 20px;" ui-sref=".3">
+				<a class="zi" style="font-size: 1.2vw;color: #000;position: relative;top: 20%;left: 30%;">丽江</a>
+			</div>
+			<!--five-->
+			<div class="kuang" style="width: 7vw;height: 3vw;border: 1px solid #ccc;border-radius: 20px;" ui-sref=".4">
+				<a class="zi" style="font-size: 1.2vw;color: #000;position: relative;top: 20%;left: 20%;">普吉岛</a>
+			</div>
+			<!--six-->
+			<div class="kuang" style="width: 7vw;height: 3vw;border: 1px solid #ccc;border-radius: 20px;" ui-sref=".5">
+				<a class="zi" style="font-size: 1.2vw;color: #000;position: relative;top: 20%;left: 10%;">马尔代夫</a>
+			</div>
+			<!--seven-->
+			<div class="kuang" style="width: 7vw;height: 3vw;border: 1px solid #ccc;border-radius: 20px;" ui-sref=".6">
+				<a class="zi" style="font-size: 1.2vw;color: #000;position: relative;top: 20%;left: 30%;">三亚</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div ui-view=""></div>
+
+<div class="container">
+	<div class="row">
+		 <ul class="pager">
+		    <li class="h3"><a  style="color: #c53109;cursor:pointer;">上一页</a></li>
+		    <li class="h3"><a  style="color: #c53109;cursor:pointer;">1</a></li>
+		    <li class="h3"><a  style="color: #c53109;cursor:pointer;">下一页</a></li>
+		  </ul>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		$(".kuang").click(function(){
+			$(this).css("background-color","red");
+			$(".kuang").not(this).css("background-color","#fff");
+		});
+	});
+</script>
+
+<style>
+	.juli{
+		position: relative;
+		left: 35%;
+	}
+	.juli2{
+		padding-top: 10px;
+		position: relative;
+		left: 30%;
+	}
+	.kuang{
+		float: left;
+		margin-left: 30px;
+		cursor:pointer;
+	}
+	.kuang:hover{
+		animation: myfirst 2s forwards;
+	}
+	@keyframes myfirst{
+		0%{background-color: #fff;}
+		100%{background-color: #ff0000;}
+	}
+	@-moz-keyframes myfirst{
+		0%{background-color: #fff;}
+		100%{background-color: #ff0000;}
+	}
+	@-webkit-keyframes myfirst{
+		0%{background-color: #fff;}
+		100%{background-color: #ff0000;}
+	}
+	@-o-keyframes myfirst{
+		0%{background-color: #fff;}
+		100%{background-color: #ff0000;}
+	}
+	
+	.zi:hover{
+		animation: mySecond 1s forwards;
+	}
+	@keyframes mySecond{
+		0%{color: #000;}
+		100%{color: #fff;}
+	}
+	@-moz-keyframes mySecond{
+		0%{color: #000;}
+		100%{color: #fff;}
+	}
+	@-webkit-keyframes mySecond{
+		0%{color: #000;}
+		100%{color: #fff;}
+	}
+	@-o-keyframes mySecond{
+		0%{color: #000;}
+		100%{color: #fff;}
+	}
+</style>

@@ -1,0 +1,35 @@
+/*爱在旅途，环球旅拍*/
+.container .row .lvpai{
+	margin-left: -30px;
+}
+.container .row .lvpai li{
+	list-style: none;
+}
+
+/*客片展示*/
+.container .row .bianda:hover{
+	overflow: hidden;
+	transform: scale(1.2,1.2);
+}
+
+/*优势*/
+.container .row .fanzhuan:hover{
+	animation: myfirst 2s;
+}
+@keyframes myfirst{
+	0%{transform: rotateY(0deg);}
+	100%{transform: rotateY(360deg);}
+}
+@-moz-keyframes myfirst{
+	0%{transform: rotateY(0deg);}
+	100%{transform: rotateY(360deg);}
+}
+@-webkit-keyframes myfirst{
+	0%{transform: rotateY(0deg);}
+	100%{transform: rotateY(360deg);}
+}
+@-o-keyframes myfirst{
+	0%{transform: rotateY(0deg);}
+	100%{transform: rotateY(360deg);}
+}
+
